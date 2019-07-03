@@ -42,7 +42,15 @@ def match_ends(words):
 # before combining them.
 def front_x(words):
     # +++your code here+++
-    return
+    words_startswith_x = []
+    other_words = []
+    for w in words:
+         if(w.startswith('x')):
+              words_startswith_x.append(w)
+              continue
+         other_words.append(w)
+
+    return sorted(words_startswith_x) + sorted(other_words)
 
 
 # C. sort_last
